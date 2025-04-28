@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <form>
+        <label for="Input.nombre">
+            Nombre Completo
+        </label>
+        <input 
+            type="text"
+            id="input-nombre"
+            placeholder="Ej. Nombre Completo"
+            pattern="[A-Za-z\s]+"
+            required
+        >
+        <br/>
+
+        <label for="input-edad">
+            Edad
+        </label>
+        <input 
+            type="number"
+            id="input-edad"
+            placeholder="Ej. 22"
+            min="1"
+            max="80"
+            required    
+        >
+        <br/>
+        <label for="input-password">
+            Contraseña
+        </label>
+        <input 
+            type="password"
+            id="input-password"
+            minlength="6"
+            maxlength="12"
+            required
+        >
+        <br/>
+        <h4>Genero</h4>
+        <input 
+            type="radio"
+            id="radio.masculino"
+            name="genero"
+        >
+        <label for="maculino">
+            Masulino
+        </label>
+        <br/>
+            <input 
+                type="radio"
+                id="radio.femenino"
+                name="genero"
+        >
+            <label for="Femenino">
+                Femenino
+            </label>
+            <br/>
+            <label for="radio-otro">
+                Otro
+            </label>
+        <br/>
+            <h4>Hobbies</h4>
+            <label for="musica">
+                Escuchar Musica
+            </label>
+            <input 
+            type="checkbox" 
+            id="musica"
+        >
+        <br/>
+            <label for="dormir">
+                dormir
+            </label>
+            <input type="checkbox"
+            id="dormir"
+        >
+        
+        <br/>
+            <label for="leer">
+                Leer
+            </label>
+            <input type="checkbox"
+            id="leer"
+        >
+
+        <br/>
+            <label for="Ver youtube">
+                Ver yotube
+            </label>
+            <input type="checkbox"
+            id="youtube"
+        >
+        <br/>
+        <h4>Ubicacion</h4>
+        <label for="dpto">
+            Donde resides?
+        </label>
+        <select id="dpto">
+            <option select disabled>
+                Seleccione una 
+            </option>
+            <option>Puerto maldonado</option>
+            <option>Lima</option>
+            <option>Arequipa</option>
+            <option>Cusco</option>
+            <option>Puno</option>
+
+        </select>
+        <br/>
+        <h4>Pais</h4>
+        <input list="pais">
+        <datalist id="pais">
+            <option >peru</option>
+            <option >brasil</option>
+            <option >chile</option>
+            <option >argentina</option>
+            <option >paraguay</option>
+        </datalist>
+        <br/>
+
+        <button type="submit">Subir</button>
+
+            
+    
+    </form>
+</body>
+</html>
